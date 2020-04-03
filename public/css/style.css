@@ -1,0 +1,72 @@
+body {
+    background-color: #C14040;
+    font-family: 'Bree Serif', serif;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background-color: #EFE3E3 !important;
+    border-radius: 1em;
+    margin-bottom: 2rem;
+}
+
+.navbar-light .navbar-brand {
+    color: #C14040;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #C14040;
+    text-align: center;
+}
+
+a {
+    color: #EFE3E3;
+}
+
+a:hover {
+    color: #EFE3E3;
+    text-decoration: none;
+    text-shadow: #fefefe 1px 0 10px;
+}
+
+.card {
+    background-color: #982C2C;
+    border-radius: 2rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.list-group-item {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    min-width: 200px;
+    width: 20%;
+    border: 2px solid #ffffff !important;
+    border-radius: 1rem !important;
+}
+
+.progress {
+    background-color: #632B2B;
+}
+
+.progress-bar {
+    background-color: #ffffff;
+}

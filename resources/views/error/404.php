@@ -3,7 +3,7 @@
 <h1>404 - Not found</h1>
 
 <p>
-    Page 404 à personnaliser !
+    Le page recherchée n'existe pas!
 </p>
 
 <p>

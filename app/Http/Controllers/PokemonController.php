@@ -4,23 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\Pokemon;
 
-class MainController extends Controller
+class PokemonController extends Controller
 {
     /**
      * HTTP method: GET
-     * URL : /
+     * URL : /pokemon/{id}
      */
-    public function home() {
+    public function details($pokemonId) {
 
-        $pokemonList = Pokemon::all();
+        $pokemon = Pokemon::where('numero', $pokemonId)->first();
 
         return view(
             // Nom de la View dans /resources/views
             // => /resources/views/main/home.php
-            'main.home',
+            'pokemon.details',
             // Données à transmettre à la View
             [
-                'pokemonList' => $pokemonList,
+                'pokemon' => $pokemon
             ]
         );
     }

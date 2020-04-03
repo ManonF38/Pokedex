@@ -1,12 +1,14 @@
 <?php include __DIR__.'/../layout/header.php'; ?>
 
-        <h1>Hello, <?= $name ?></h1>
-
-        <p>
-            Bienvenue sur la page par défaut de ton exercice <strong>Pokédex</strong>.<br>
-            Tu as bien réussi à installer les dépendances de <em>Composer</em>, maintenant, tu dois créer routes, Controllers, Models et Views &lt;3
-        </p>
-
-        <small>PS : tu peux personnaliser le nom dans le h1, en changeant la donnée envoyée depuis le Controller ;)</small>
+<div class="row justify-content-center">
+  <?php foreach ($pokemonList as $currentPokemon) : ?>
+  <div class="card pl-3 pt-3 pr-3" style="width : 18rem">
+    <a href="<?= route('pokemon-details', ['id' => $currentPokemon->numero]) ?>"><img src="<?= route('main-home') ?>/img/<?= $currentPokemon->numero ?>.png" class="card-img-top" alt="<?= $currentPokemon->nom ?>"></a>
+    <div class="card-body">
+      <p class="card-text text-center"><a href="<?= route('pokemon-details', ['id' => $currentPokemon->numero]) ?>">#<?= $currentPokemon->numero ?> <?= $currentPokemon->nom ?></a></p>
+    </div>
+  </div>
+  <?php endforeach ?>
+</div>
 
 <?php include __DIR__.'/../layout/footer.php'; ?>

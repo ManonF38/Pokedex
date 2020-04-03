@@ -19,3 +19,31 @@ $router->get(
         'as'   => 'main-home'
     ]
 );
+
+// route pour la page détails
+$router->get(
+    '/pokemon/{id}',
+    [
+        'uses' => 'PokemonController@details',
+        'as'   => 'pokemon-details'
+    ]
+);
+
+// route pour la liste des types
+$router->get(
+    '/types',
+    [
+        'uses' => 'TypeController@list',
+        'as'   => 'type-list'
+    ]
+);
+
+
+// route pour la liste des types
+$router->get(
+    '/types/{id}',
+    [
+        'uses' => 'TypeController@pokemonList',
+        'as'   => 'type-pokemon-list'
+    ]
+);
