@@ -4,7 +4,7 @@
 
 <div class="row justify-content-center">
     <div class="col-8 col-lg-4">
-        <img src="/img/<?= $pokemon->numero ?>.png" class="card-img" alt="<?= $pokemon->nom ?>">
+        <img src="<?= route('main-home') ?>/img/<?= $pokemon->numero ?>.png" class="card-img" alt="<?= $pokemon->nom ?>">
     </div>
     <div class="col-12 col-lg-7 card px-0 pb-3" style="width: 60%">
         <div class="row no-gutters">
