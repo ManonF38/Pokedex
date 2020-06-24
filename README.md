@@ -1,46 +1,13 @@
-# Pokédex
+# Projet Pokedex
 
-Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !
+Exercice pratique de l'école O'clock
 
-Un pokédex est une sorte de dictionnaire de tous les pokémon (petites créatures fictives et adorables). Ces derniers peuvent se battre
-et disposent de caractéristiques de combat appelées statistiques. Chaque pokémon possède aussi un ou deux types (plante, roche, feu...).
+## Objectif
 
-Vous aurez besoin pour cette mission des outils suivants : 
-- PHP
-- MySQL
-- HTML & CSS
-- Lumen & Eloquent
+Création d'un site en MVC de pokemons en utilisant Lumen de Laravel.
 
-Une base de données à importer vous est fournie à la racine du projet : `pokedex.sql`. Elle contient la liste des pokémon et 
-leurs types. Vous n'avez pas à la modifier.
+La BDD, fournit par l'école, est volotairement différente du format attendu par Lumen afin de forcer l'utilisation d'une table pivot.
 
-# Instructions 
 
-Voici la liste des pages à faire, vous avez un aperçu de chaque dans le dossier résultat : 
 
-- Une page d'accueil qui liste tous les pokémon de la base (home.png)
-- Une page détail d'un pokémon qui affiche son type et ses stats (detail.png)
-
-La police utilisée est Bree Serif sur Google Fonts. Pour les couleurs, utilisez une pipette :wink:. Pour celles des types, elle est fournie dans la base.
-
-## Par où commencer ?
-
-Voilà quelques pistes pour vous aider : 
-
-- Commencez par installer les dépendances composer (_Lumen_ faisant partie des dépendances)
-- Configurez _Lumen_ (`.env`)
-- La page d'accueil est déjà en place, mais ne correspond pas à la demande
-- Il y a une route supplémentaire à créer
-- Il faut penser à coder les _Models_ (cette fois, la base de données ne suit pas les conventions de nommage de _Lumen_, il faudra donc personnaliser les _Models_)
-- Pour récupérer les types d'un pokémon, il faut utiliser une "Relationship" entre les _Models_ représentant les tables `pokemon` et `pokemon_type`
-- Les images sont déjà prêtes et portent le nom du numéro du pokémon dans le dossier `public/img`
-- Pour les barres de statistiques, la valeur maximale est de 255. On peut donc utiliser un produit en croix pour le remplissage :wink:
-
-# Bonus
-
-Je veux ajouter une fonctionnalité : récupérer des pokémons selon leur type.
-
-Il nous faudra donc : 
-- Une page qui liste les types de la base (types.png) quand on clique sur l'un on arrive sur la page suivante
-- Une page qui liste les pokémon filtrés par le type cliqué sur la page précédente (electrik.png)
-
+Le dossier '__résultat_final' contient le visuel du site créé.
